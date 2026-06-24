@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Venta y servicio técnico de motos y bicicletas eléctricas modernas. Descubre tu movilidad urbana ideal con Motos y Bicis El Brus. Envíos seguros y garantía directa.">
+  <title>Motos y Bicis El Brus | Tu Movilidad Urbana Inteligente</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+     HEADER / NAVEGACIÓN
+     ========================================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <!-- Logo -->
+      <a href="#inicio" class="logo" id="logo-link">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2.5" fill="none"/>
+          <circle cx="12" cy="12" r="3" fill="currentColor"/>
+          <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        Motos y Bicis <span>El Brus</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#inicio" class="nav-link">INICIO</a>
+        <a href="#motos" class="nav-link">MOTOS</a>
+        <a href="#bicis" class="nav-link">BICIS</a>
+        <a href="#accesorios" class="nav-link">ACCESORIOS</a>
+        <a href="#servicio" class="nav-link">SERVICIO</a>
+        <a href="#contacto" class="nav-link">CONTACTO</a>
+      </nav>
+
+      <!-- Actions (Profile, Cart, Mobile menu) -->
+      <div class="header-actions">
+        <!-- Profile Icon -->
+        <a href="#perfil" class="action-btn" aria-label="Perfil de usuario">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </a>
+
+        <!-- Shopping Cart Icon -->
+        <button class="action-btn" id="cart-toggle-btn" aria-label="Ver carrito de compras">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg>
+          <span class="cart-count" id="cart-counter">0</span>
+        </button>
+
+        <!-- Hamburguer Mobile Menu Button -->
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+     HERO SECTION
+     ========================================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <h1 class="hero-h1">TU MOVILIDAD URBANA <span>COMIENZA AQUÍ</span></h1>
+      <h2 class="hero-h2">VENTA Y SERVICIO DE MOTOS Y BICIS ELÉCTRICAS</h2>
+      <a href="#productos-destacados" class="hero-btn">VER CATÁLOGO</a>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SECCIÓN "QUIÉNES SOMOS"
+     ========================================== -->
+  <section class="about" id="quienes-somos">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2 class="about-h2">Revolucionamos tu forma de moverte</h2>
+          <p class="about-p">
+            En Motos y Bicis El Brus, creemos que la ciudad está hecha para disfrutarse, no para padecer el tráfico. Somos especialistas en alternativas de movilidad inteligente, ofreciendo vehículos eficientes, modernos y amigables con tu bolsillo. Te acompañamos en cada kilómetro con la mejor calidad.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>100% Ecológico</span>
+            </div>
+            <div class="about-feature">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>Garantía Directa</span>
+            </div>
+            <div class="about-feature">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>Soporte Técnico</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-wrapper">
+          <div class="about-image-decor"></div>
+          <div class="about-card">
+            <p class="about-card-quote">"La mejor inversión que he hecho. Ahorro tiempo de traslado y dinero todos los días."</p>
+            <p class="about-card-author">— Cliente Satisfecho</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     CATEGORÍAS RÁPIDAS
+     ========================================== -->
+  <section class="categories">
+    <div class="container">
+      <div class="categories-grid">
+        <!-- Tarjeta 1: Motos -->
+        <a href="#motos" class="category-card">
+          <img src="assets/cat-motos.png" alt="Scooter / Moto Eléctrica moderna" class="category-img">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">NUESTRAS MOTOS</h3>
+            <span class="category-link">
+              Explorar Catálogo
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Tarjeta 2: Bicis -->
+        <a href="#bicis" class="category-card">
+          <img src="assets/cat-bicis.png" alt="Bicicleta Urbana elegante en la calle" class="category-img">
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <h3 class="category-title">NUESTRAS BICIS</h3>
+            <span class="category-link">
+              Explorar Catálogo
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     GRID DE PRODUCTOS DESTACADOS
+     ========================================== -->
+  <section class="products" id="productos-destacados">
+    <div class="container">
+      <h2 class="section-title">Productos Destacados</h2>
+
+      <!-- Sub-Sección Motos -->
+      <div id="motos" style="scroll-margin-top: 100px;">
+        <h3 class="product-group-title">Motos Eléctricas</h3>
+        <p class="product-group-subtitle">Potencia y estilo para dominar la ciudad.</p>
+        
+        <div class="products-grid">
+          <!-- Tarjeta Moto 1 -->
+          <article class="product-card">
+            <span class="product-badge">NUEVO</span>
+            <div class="product-image-container">
+              <img src="assets/moto-1.png" alt="Moto Eléctrica Brus Sport Max" class="product-img">
+            </div>
+            <div class="product-details">
+              <h4 class="product-name">Moto Eléctrica Brus Sport Max</h4>
+              <p class="product-price">$54,990.00 MXN</p>
+              <button class="product-btn add-to-cart-btn" 
+                      data-id="moto-sport-max" 
+                      data-name="Brus Sport Max" 
+                      data-price="54990" 
+                      data-img="assets/moto-1.png">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9" cy="21" r="1" />
+                  <circle cx="20" cy="21" r="1" />
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                </svg>
+                AÑADIR AL CARRITO
+              </button>
+            </div>
+          </article>
+
+          <!-- Tarjeta Moto 2 -->
+          <article class="product-card">
+            <span class="product-badge oferta">OFERTA</span>
+            <div class="product-image-container">
+              <img src="assets/moto-2.png" alt="Scooter Eléctrico Brus City S" class="product-img">
+            </div>
+            <div class="product-details">
+              <h4 class="product-name">Scooter Eléctrico Brus City S</h4>
+              <p class="product-price"><span>$32,990.00</span> $28,990.00 MXN</p>
+              <button class="product-btn add-to-cart-btn" 
+                      data-id="scooter-city-s" 
+                      data-name="Brus City S" 
+                      data-price="28990" 
+                      data-img="assets/moto-2.png">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9" cy="21" r="1" />
+                  <circle cx="20" cy="21" r="1" />
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                </svg>
+                AÑADIR AL CARRITO
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Sub-Sección Bicis -->
+      <div id="bicis" style="scroll-margin-top: 100px; margin-top: 3rem;">
+        <h3 class="product-group-title">Bicicletas Eléctricas</h3>
+        <p class="product-group-subtitle">Ligera, resistente y lista para la aventura.</p>
+        
+        <div class="products-grid">
+          <!-- Tarjeta Bici 1 -->
+          <article class="product-card">
+            <span class="product-badge">NUEVO</span>
+            <div class="product-image-container">
+              <img src="assets/bici-1.png" alt="Bicicleta Eléctrica Brus Urban Lite" class="product-img">
+            </div>
+            <div class="product-details">
+              <h4 class="product-name">Bicicleta Eléctrica Brus Urban Lite</h4>
+              <p class="product-price">$18,490.00 MXN</p>
+              <button class="product-btn add-to-cart-btn" 
+                      data-id="bici-urban-lite" 
+                      data-name="Brus Urban Lite" 
+                      data-price="18490" 
+                      data-img="assets/bici-1.png">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9" cy="21" r="1" />
+                  <circle cx="20" cy="21" r="1" />
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                </svg>
+                AÑADIR AL CARRITO
+              </button>
+            </div>
+          </article>
+
+          <!-- Tarjeta Bici 2 -->
+          <article class="product-card">
+            <span class="product-badge oferta">OFERTA</span>
+            <div class="product-image-container">
+              <img src="assets/bici-2.png" alt="Bicicleta Eléctrica Brus Explorer" class="product-img">
+            </div>
+            <div class="product-details">
+              <h4 class="product-name">Bicicleta Eléctrica Brus Explorer</h4>
+              <p class="product-price"><span>$27,490.00</span> $24,990.00 MXN</p>
+              <button class="product-btn add-to-cart-btn" 
+                      data-id="bici-explorer" 
+                      data-name="Brus Explorer" 
+                      data-price="24990" 
+                      data-img="assets/bici-2.png">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9" cy="21" r="1" />
+                  <circle cx="20" cy="21" r="1" />
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                </svg>
+                AÑADIR AL CARRITO
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     SERVICIO Y TALLER
+     ========================================== -->
+  <section class="services" id="servicio">
+    <div class="container">
+      <h2 class="section-title">Respaldo total en cada rodada</h2>
+      
+      <div class="services-grid">
+        <!-- Ítem 1: Taller -->
+        <article class="service-item">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+          </div>
+          <h3 class="service-title">Taller Especializado</h3>
+          <p class="service-desc">Mantenimiento preventivo y correctivo.</p>
+        </article>
+
+        <!-- Ítem 2: Refacciones -->
+        <article class="service-item">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg>
+          </div>
+          <h3 class="service-title">Refacciones Garantizadas</h3>
+          <p class="service-desc">Catálogo completo de repuestos.</p>
+        </article>
+
+        <!-- Ítem 3: Asesoría -->
+        <article class="service-item">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              <path d="M12 11h.01M9 11h.01M15 11h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Asesoría Personalizada</h3>
+          <p class="service-desc">Te ayudamos a encontrar tu vehículo ideal.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     CONTACTO Y FOOTER
+     ========================================== -->
+  <footer class="footer-section" id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Widget 1: Formulario de Contacto -->
+        <div class="footer-widget">
+          <h3 class="footer-widget-title">Escríbenos</h3>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input type="text" id="form-name" class="form-input" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="form-email" class="form-input" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+              <textarea id="form-message" class="form-input" placeholder="Mensaje" required></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn">ENVIAR</button>
+            <div class="form-message" id="form-feedback-message"></div>
+          </form>
+        </div>
+
+        <!-- Widget 2: Políticas -->
+        <div class="footer-widget">
+          <h3 class="footer-widget-title">Nuestras Garantías</h3>
+          <div class="policies-list">
+            <!-- Política 1 -->
+            <div class="policy-item">
+              <div class="policy-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1" y="3" width="15" height="13" />
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" />
+                </svg>
+              </div>
+              <div class="policy-text">
+                <h4>Envíos seguros a tu puerta</h4>
+                <p>Despacho y entrega monitoreada con el mayor cuidado en toda la república.</p>
+              </div>
+            </div>
+
+            <!-- Política 2 -->
+            <div class="policy-item">
+              <div class="policy-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div class="policy-text">
+                <h4>Garantía directa contra defectos de fábrica</h4>
+                <p>Nuestros vehículos pasan por rigurosos controles de calidad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Widget 3: Información y Redes -->
+        <div class="footer-widget" id="accesorios">
+          <h3 class="footer-widget-title">Contacto</h3>
+          <div class="contact-info">
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Av. de la Movilidad #100, Col. Centro</span>
+            </div>
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>+52 (55) 1234-5678</span>
+            </div>
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>ventas@motosybiciselbrus.com</span>
+            </div>
+          </div>
+
+          <h4 style="font-family: var(--font-header); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.75rem;">Síguenos</h4>
+          <div class="social-links">
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <!-- Twitter / X -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Motos y Bicis El Brus. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="#politica-privacidad">Aviso de Privacidad</a>
+          <a href="#terminos">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+     ELEMENTO FLOTANTE GLOBAL (WHATSAPP)
+     ========================================== -->
+  <a href="https://wa.me/525512345678?text=Hola,%20estoy%20interesado%20en%20los%20veh%C3%ADculos%20el%C3%A9ctricos%20de%20El%20Brus." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     id="whatsapp-floating-btn" 
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.73-1.45L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.967C16.528 1.973 14.07 1.01 11.45 1.01c-5.437 0-9.862 4.372-9.866 9.802-.001 1.77.476 3.493 1.382 5.065l-.946 3.454 3.628-.967zm12.352-7.143c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.735.165-.218.33-.842 1.072-1.033 1.293-.19.22-.38.247-.71.082-.33-.165-1.393-.513-2.653-1.638-.98-.874-1.642-1.953-1.834-2.282-.19-.33-.02-.508.145-.671.148-.147.33-.385.495-.578.165-.192.22-.33.33-.55.11-.22.055-.412-.028-.577-.082-.165-.735-1.771-1.006-2.43-.263-.633-.531-.548-.735-.558-.19-.01-.408-.012-.626-.012-.218 0-.57.082-.87.412-.3.33-1.144 1.118-1.144 2.724 0 1.606 1.171 3.159 1.334 3.379.163.22 2.304 3.518 5.582 4.933.78.337 1.389.538 1.862.689.783.249 1.497.214 2.06.13.629-.094 1.951-.798 2.224-1.57.272-.77.272-1.43.19-1.57-.083-.14-.3-.22-.63-.385z"/>
+    </svg>
+  </a>
+
+  <!-- ==========================================
+     SHOPPING CART DRAWER (INTERACTIVE)
+     ========================================== -->
+  <!-- Background Overlay -->
+  <div class="cart-drawer-overlay" id="cart-overlay"></div>
+  
+  <!-- Drawer Sidebar -->
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">Tu Carrito</h3>
+      <button class="cart-drawer-close" id="cart-close-btn" aria-label="Cerrar carrito de compras">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Scrollable Items Area -->
+    <div class="cart-items-container" id="cart-items-container">
+      <!-- Dynamically filled with JS -->
+      <div class="cart-empty-message" id="cart-empty-msg">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5">
+          <circle cx="9" cy="21" r="1" />
+          <circle cx="20" cy="21" r="1" />
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+        </svg>
+        <p>Tu carrito está vacío</p>
+      </div>
+    </div>
+
+    <!-- Checkout/Total Area -->
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span class="cart-total-label">Total:</span>
+        <span class="cart-total-value" id="cart-total-price">$0.00 MXN</span>
+      </div>
+      <button class="cart-checkout-btn" id="cart-checkout-btn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          <polyline points="9 11 11 13 15 9" stroke="currentColor" stroke-width="2.5" fill="none"/>
+        </svg>
+        INICIAR COMPRA
+      </button>
+    </div>
+  </aside>
+
+  <!-- JavaScript Behavior -->
+  <script src="app.js"></script>
+</body>
+</html>
